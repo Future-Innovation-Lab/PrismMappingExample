@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrismMapsExample.Views.MainView">
+    <MasterDetailPage.Master>
+        <NavigationPage Title="Required Foo" Icon="hamburger.png">
+            <x:Arguments>
+                <ContentPage Title="Menu">
+                    <StackLayout Padding="0">
+                        <Button BackgroundColor="LightBlue" Text="Prism Maps Binding" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/MapsView" />
+                        <Button BackgroundColor="LightBlue" Text="Prism Other View" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/OtherView" />
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>
